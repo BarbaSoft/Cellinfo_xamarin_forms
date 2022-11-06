@@ -26,7 +26,10 @@ namespace Cellinfo_xamarin_forms
         private void button_get_infos_Clicked(object sender, EventArgs e)
         {
             var info=cellinfo.GetCellInfo();
-
+            foreach (Infos i in info)
+            {
+                string identity = i.CellIdentity;
+            }
         }
     }
 }
