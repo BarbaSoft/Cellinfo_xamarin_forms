@@ -1,4 +1,4 @@
-# Cellinfo_xamarin_forms
+# Cellinfo xamarin forms
 CellInfo for Xamarin Forms. Android minimun API level 30
 
 You can view cell information of Android phones (minimun 11, API level 30) 
