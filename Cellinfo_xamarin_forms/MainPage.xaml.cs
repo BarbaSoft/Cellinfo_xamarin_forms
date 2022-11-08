@@ -26,9 +26,17 @@ namespace Cellinfo_xamarin_forms
         private void button_get_infos_Clicked(object sender, EventArgs e)
         {
             var info=cellinfo.GetCellInfo();
+
+            string CallState=cellinfo.CallState; //retrive call state
+            string TelephoneModel=cellinfo.TelephoneModel; //Telephone Model
+            string OperatorName=cellinfo.NetworkOperatorName; //Network Operator
+            string SimOperatorName=cellinfo.SimOperatorName; //SIM Operator
+
             foreach (Infos i in info)
             {
                 string identity = i.CellIdentity;
+                int Level_dBm = i.SignalLeveldBm;
+                string ConnectionStatus = i.CellConnectionStatus;
             }
         }
     }
