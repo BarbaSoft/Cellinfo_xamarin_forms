@@ -30,9 +30,16 @@ SIMPLY USE:
 ```
 CellInfo cellinfo = new Cellinfo();
 var info=cellinfo.GetCellInfo();
+
+string CallState=cellinfo.CallState; //retrive call state
+string TelephoneModel=cellinfo.TelephoneModel; //Telephone Model
+string OperatorName=cellinfo.NetworkOperatorName; //Network Operator
+string SimOperatorName=cellinfo.SimOperatorName; //SIM Operator
+
 foreach (Infos i in info)
-{
-  string identity = i.CellIdentity;
-  //same for other information
-}
+           {
+                string identity = i.CellIdentity;
+                int Level_dBm = i.SignalLeveldBm;
+                string ConnectionStatus = i.CellConnectionStatus;
+            }
 ```
